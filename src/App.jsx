@@ -28,23 +28,25 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>깃커밋 테스트용</h1>
-          <p>
+          <h1>zephyr</h1>
+          <p>zephyr 사이트에 오신것을 환영합니다.</p>
+          {/*<p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
+          */}
         </div>
         {/* 여기에뿌린다 */}
         <div>
-          <h1>블로그 리스트 결과</h1>
-          <p>{blogList.length > 0 ? blogList.map((blog,index) => (<span> {blog.contents}</span>)) : '데이터없음'}</p>
+          <p style={{color : 'blue'}}>여행지 리스트</p>
+          {blogList.length > 0 ? (blogList.map((blog,index) => (<p key={index}>{blog.contents}</p> ))) : <p>('데이터없음')</p>}
         </div>
-        <button
+        {/* <button
           type="button"
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
-        </button>
+        </button> */}
       </section>
 
       <div className="ticks"></div>
